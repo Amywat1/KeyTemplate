@@ -7,7 +7,7 @@ int main (void)
     delay_init();
     LedInit();
     BeepInit();
-    KeyInit();
+    KeyInit();                              //按键初始化
     LED0 = 0;					            //先点亮红灯
 
     while(1)
