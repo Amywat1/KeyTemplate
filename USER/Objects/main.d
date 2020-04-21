@@ -1,0 +1,16 @@
+.\objects\main.o: main.c
+.\objects\main.o: header.h
+.\objects\main.o: ..\SYSTEM\sys\sys.h
+.\objects\main.o: ..\USER\stm32f10x.h
+.\objects\main.o: ..\CORE\core_cm3.h
+.\objects\main.o: D:\Keil\MDK-ARM\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: ..\USER\system_stm32f10x.h
+.\objects\main.o: ..\USER\stm32f10x_conf.h
+.\objects\main.o: ..\STM32F10xx_FWLib\inc\stm32f10x_gpio.h
+.\objects\main.o: ..\USER\stm32f10x.h
+.\objects\main.o: ..\STM32F10xx_FWLib\inc\stm32f10x_rcc.h
+.\objects\main.o: ..\STM32F10xx_FWLib\inc\misc.h
+.\objects\main.o: ..\SYSTEM\delay\delay.h
+.\objects\main.o: ..\HARDWARE\led.h
+.\objects\main.o: ..\HARDWARE\key.h
+.\objects\main.o: ..\HARDWARE\beep.h

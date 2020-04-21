@@ -7,9 +7,10 @@
 
   <Targets>
     <Target>
-      <TargetName>BuzTemplate</TargetName>
+      <TargetName>KeyTemplate</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -337,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\HARDWARE;..\STM32F10xx_FWLib;..\SYSTEM;..\USER</IncludePath>
+              <IncludePath>..\CORE;..\HARDWARE;..\STM32F10xx_FWLib\inc;..\USER;..\SYSTEM\sys;..\SYSTEM\delay</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -391,10 +392,32 @@
               <FileType>1</FileType>
               <FilePath>.\system_stm32f10x.c</FilePath>
             </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>HARDWARE</GroupName>
+          <Files>
+            <File>
+              <FileName>beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\led.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>SYSTEM</GroupName>
@@ -409,11 +432,6 @@
               <FileType>1</FileType>
               <FilePath>..\SYSTEM\sys\sys.c</FilePath>
             </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\usart\usart.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -424,16 +442,16 @@
               <FileType>1</FileType>
               <FilePath>..\CORE\core_cm3.c</FilePath>
             </File>
+            <File>
+              <FileName>startup_stm32f10x_hd.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\CORE\startup_stm32f10x_hd.s</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>STM32F10xx_FWLib</GroupName>
           <Files>
-            <File>
-              <FileName>misc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STM32F10xx_FWLib\src\misc.c</FilePath>
-            </File>
             <File>
               <FileName>stm32f10x_gpio.c</FileName>
               <FileType>1</FileType>
@@ -443,6 +461,11 @@
               <FileName>stm32f10x_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\STM32F10xx_FWLib\src\stm32f10x_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STM32F10xx_FWLib\src\misc.c</FilePath>
             </File>
           </Files>
         </Group>
