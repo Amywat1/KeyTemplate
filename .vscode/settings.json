@@ -3,5 +3,15 @@
         "header.h": "c",
         "sys.h": "c",
         "stm32f10x_gpio.h": "c"
+    },
+    
+    "search.exclude": {       
+        "**/Objects": true,
+        "**/Listings": true,
+    },
+
+    "files.exclude": {
+        "**/Objects": true,
+        "**/Listings": true, 
     }
 }

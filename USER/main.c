@@ -2,7 +2,7 @@
 
 int main (void)
 {
-    u8 key;
+    vu8 key;
 
     delay_init();
     LedInit();
